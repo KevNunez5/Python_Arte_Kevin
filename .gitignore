@@ -23,6 +23,3 @@ __pycache__/
 
 # VS Code
 .vscode/
-
-# Archivos de resultados generados por Spark
-resultados/
