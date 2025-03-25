@@ -1,0 +1,28 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Archivos de Jupyter
+.ipynb_checkpoints
+
+# MacOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Archivos de resultados generados por Spark
+resultados/
