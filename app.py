@@ -7,15 +7,15 @@ import json
 st.title("Análisis de Autos y Consumo de Gasolina")
 st.write("Este dashboard analiza datos del dataset Auto MPG.")
 
-# Cargar datos procesados
-data = []
-for file in os.listdir("resultados"):
-    if file.endswith(".json"):
-        with open(f"resultados/{file}") as f:
-            data.append(json.load(f))
+# Cargar archivo único JSON generado por Spark
+import json
 
-# Convertir a DataFrame
-df = pd.DataFrame([x[0] for x in data])
+with open("resultados/resultado.json", "r") as f:
+    lines = f.readlines()
+
+data = [json.loads(line) for line in lines]
+df = pd.DataFrame(data)
+
 
 # Mostrar tabla
 st.subheader("Consumo promedio por número de cilindros")
