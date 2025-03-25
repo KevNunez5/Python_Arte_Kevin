@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import os
 import json
 
+#Link al colab donde se usó el codigo de SPARK: https://colab.research.google.com/drive/1-Dvc5l3OVwpq8jimOemBoIG4WxAZiBfL?usp=sharing
+
 st.title("Análisis de Autos y Consumo de Gasolina")
 st.write("Este dashboard analiza datos del dataset Auto MPG.")
 
